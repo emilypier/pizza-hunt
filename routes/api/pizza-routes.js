@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const {     // destructuring the method names out of the imported object
+// destructuring the method names out of the imported object
+const {
   getAllPizza,
   getPizzaById,
   createPizza,
@@ -19,5 +20,5 @@ router
   .get(getPizzaById)
   .put(updatePizza)
   .delete(deletePizza);
-  
+
 module.exports = router;

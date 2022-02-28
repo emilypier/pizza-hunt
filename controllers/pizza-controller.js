@@ -3,7 +3,7 @@ const { Pizza } = require('../models');
 const pizzaController = {
   // get all pizzas. GET /api/pizzas
   getAllPizza(req, res) {
-    //mongood .find() method similar to sequekuze .findAll() method
+    //mongod .find() method similar to sequelize .findAll() method
     Pizza.find({})
       .then(dbPizzaData => res.json(dbPizzaData))
       .catch(err => {
